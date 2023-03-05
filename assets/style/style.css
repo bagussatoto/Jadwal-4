@@ -1,0 +1,245 @@
+@media only screen and (max-width: 1200px){
+    .jadwal-kuliah{
+        width: 65% !important;
+    }
+    .jadwal{
+        width: 50% !important;
+    }
+    .tampil{
+        width: 50vw !important;
+    }
+    .jadwal input[type="text"]{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+  .jadwal-kuliah {
+    width: 40vw !important;
+  }
+  .jadwal {
+    width: 85vw !important;
+  }
+  .tampil{
+      width: 50vw !important;
+    }
+    .tampil-table{
+        width: 40vw !important;
+    }
+    .jadwal input[type="text"]{
+        width: 100% !important;
+    }
+    .jadwal input[type="time"]{
+        width: 100% !important;
+    }
+    th{
+        font-size: 10px !important;
+    }
+    td{
+        font-size: 13px !important;
+    }
+    .judul{
+        font-size: 30px !important;
+    }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.cek {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cek:hover {
+  background-color: #666;
+}
+
+.judul {
+  text-align: center;
+}
+/*Jadwal Kuliah*/
+.jadwal-kuliah {
+  border-collapse: collapse;
+  width: 52%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+th,
+td {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #008cba;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/*Tampil*/
+.tampil {
+  border-collapse: collapse;
+  margin: auto;
+  width: 53%;
+  background-color: white;
+  margin-bottom: 3rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.cetak {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.cetak:hover {
+  background-color: #005d82;
+}
+/* Form */
+.jadwal {
+  margin: 0 auto;
+  width: 45%;
+  color: black;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.jadwal label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.jadwal input[type="text"] {
+  width: 40vw;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #e0e0e0;
+}
+
+.jadwal input[type="time"]{
+  width: 40vw;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #e0e0e0;
+}
+
+.jadwal input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.jadwal input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.jadwal-edit {
+  display: none;
+}
+
+.jadwal-delete {
+  text-align: right;
+}
+
+.jadwal-delete input[type="button"] {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.jadwal-delete input[type="button"]:hover {
+  background-color: #c62828;
+  transition: all 0.3s ease;
+}
+/*Button Simpan*/
+.simpan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.simpan:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+.simpan svg {
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+.simpan:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.simpan:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+.simpan:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
